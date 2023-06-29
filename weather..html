@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="weather-forecast-search">
+    <h1 id="Para1">Weather</h1>
+    <p id="inputContainer">City: <input type="text" id="cityInput"><button onclick="getInfo()">Search</button></p>
+    <h2 id="cityName">--London--</h2>
+</div>
+<div class="five-day-forecast">
+    <div class="date-container">
+        <div class="time" id="time">
+            12:30 <span id="am-pm">PM</span>
+        </div>
+        <div class="date" id="date">
+            Monday, 25 May
+        </div>
+    <div class="weather-forecast" id="weather-forecast">
+        <div class="weather-forecast-item">
+            <div class="weather" id="day1">Mon</div>
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" class="img-class" id="img1" alt=""></div>
+            <div class="minValues" id="day1min">loading</div>
+            <div class="maxValues" id="day1max">loading</div>
+        </div>
+        <div class="weather-forecast-item">
+            <div class="weather" id="day2">Tues</div>
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" class="img-class" id="img2" alt=""></div>
+            <div class="minValues" id="day2min">loading</div>
+            <div class="maxValues" id="day2max">loading</div>
+        </div>
+        <div class="weather-forecast-item">
+            <div class="weather" id="day3">Wed</div>
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" class="img-class" id="img3" alt=""></div>
+            <div class="minValues" id="day3min">loading</div>
+            <div class="maxValues" id="day3max">loading</div>
+        </div>
+        <div class="weather-forecast-item">
+            <div class="weather" id="day4">Thurs</div>
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" class="img-class" id="img4" alt=""></div>
+            <div class="minValues" id="day4min">loading</div>
+            <div class="maxValues" id="day4max">loading</div>
+        </div>
+        <div class="weather-forecast-item">
+            <div class="weather" id="day5">Fri</div>
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" class="img-class" id="img5" alt=""></div>
+            <div class="minValues" id="day5min">loading</div>
+            <div class="maxValues" id="day5max">loading</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="js/keys.js"></script>
+<script src="js/hello.js"></script>
+</body>
+</html>
